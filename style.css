@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+
+#main-navbar .nav-link {
+    color: white;
+}
+
+#main-navbar .nav-link:hover{
+    color: darkgreen;
+}
