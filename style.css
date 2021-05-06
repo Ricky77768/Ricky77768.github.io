@@ -1,5 +1,11 @@
 body{
+    padding-top: 60px;
     background-color: black;
+    color: white;
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.5)
 }
 
 #main-navbar .nav-link {
@@ -7,5 +13,44 @@ body{
 }
 
 #main-navbar .nav-link:hover{
-    color: darkgreen;
+    color: deepskyblue;
+}
+
+#home{
+    position:relative;
+    min-height: 200px;
+    height: 100vh;
+    background-color: darkgreen;
+}
+
+
+#home .home-greet{
+    position: absolute;
+    top:40%;
+    right:40%;
+}
+
+#home .home-name{
+    position: absolute;
+    top:60%;
+    right:60%;
+}
+
+
+#about{
+    min-height: 200px;
+    height: 100vh;
+    background-color: darkcyan;
+}
+
+#projects{
+    min-height: 200px;
+    height: 100vh;
+    background-color: darkgoldenrod;
+}
+
+#contact{
+    min-height: 200px;
+    height: 100vh;
+    background-color: darkred;
 }

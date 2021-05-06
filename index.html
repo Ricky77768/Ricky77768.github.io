@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css"/>
 
+    <!-- Font Awesome Script-->
+    <script src="https://kit.fontawesome.com/65aedcf7d6.js" crossorigin="anonymous"></script>
+
     <title>Ricky Lu</title>
 </head>
+
 <body>
 
 <!-- jQuery and Bootstrap Bundle (includes Popper) -->
@@ -18,7 +22,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 <!-- Navbar -->
-<nav id="main-navbar" class="navbar navbar-expand-md">
+<nav id="main-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand" href="#">
         <img src="img/icon.jpg" width="35" height="35" alt="RL">
     </a>
@@ -29,28 +33,58 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#"> < </a>
-            </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#home"> Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"> About </a>
+                <a class="nav-link" href="#about"> About </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"> Projects </a>
+                <a class="nav-link" href="#projects"> Projects </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"> Contact </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"> > </a>
+                <a class="nav-link" href="#contact"> Contact </a>
             </li>
         </ul>
-
     </div>
 </nav>
+
+<!-- Home -->
+<div id="home" class="container-fluid">
+
+    <div class="home-greet">
+        <h6>Hi, I am</h6>
+    </div>
+
+    <div class="home-name">
+        <h2>Ricky Lu</h2>
+    </div>
+
+    <i class="fas fa-cloud-moon-rain"></i>
+
+</div>
+
+
+<!-- About -->
+<div id="about" class="container-fluid">
+    <p>ABOUT - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus ea eum officiis tempora.
+        Aut consequuntur dolorem doloremque ducimus, earum enim excepturi hic, incidunt maxime minima nostrum officia
+        sequi, suscipit.</p>
+</div>
+
+<!-- Projects -->
+<div id="projects" class="container-fluid">
+    <p>PROJECTS - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus ea eum officiis tempora.
+        Aut consequuntur dolorem doloremque ducimus, earum enim excepturi hic, incidunt maxime minima nostrum officia
+        sequi, suscipit.</p>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="container-fluid">
+    <p>CONTACT - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus ea eum officiis tempora.
+        Aut consequuntur dolorem doloremque ducimus, earum enim excepturi hic, incidunt maxime minima nostrum officia
+        sequi, suscipit.</p>
+</div>
 
 </body>
 </html>
