@@ -1,5 +1,35 @@
+
+/* Fonts */
+
+@font-face {
+    font-family: Quicksand-Light;
+    src: url('fonts/Quicksand-Light.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url('fonts/Quicksand-Regular.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Medium;
+    src: url('fonts/Quicksand-Medium.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-SemiBold;
+    src: url('fonts/Quicksand-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url('fonts/Quicksand-Bold.ttf');
+}
+
+/* Style - Nav Bar */
+
 body{
-    padding-top: 60px;
+    font-family: Quicksand-Regular, serif;
     background-color: black;
     color: white;
 }
@@ -16,41 +46,91 @@ body{
     color: deepskyblue;
 }
 
-#home{
-    position:relative;
-    min-height: 200px;
-    height: 100vh;
-    background-color: darkgreen;
+/* Style - Home */
+
+.reduce-margin-30 {
+    margin: -30px;
 }
 
-
-#home .home-greet{
-    position: absolute;
-    top:40%;
-    right:40%;
+.reduce-margin-40 {
+    margin: -40px;
 }
 
-#home .home-name{
-    position: absolute;
-    top:60%;
-    right:60%;
+.fade-in-text {
+    animation: fade-in linear 0.8s;
+    -webkit-animation: fade-in linear 0.8s;
+    -moz-animation: fade-in linear 0.8s;
+    -o-animation: fade-in linear 0.8s;
 }
 
+.fade-in-up-text {
+    animation: fade-in-up ease-out 1s;
+    -webkit-animation: fade-in-up ease-out 1s;
+    -moz-animation: fade-in-up ease-out 1s;
+    -o-animation: fade-in-up ease-out 1s;
+}
+
+.fade-in-down-text {
+    animation: fade-in-down ease-out 1s;
+    -webkit-animation: fade-in-down ease-out 1s;
+    -moz-animation: fade-in-down ease-out 1s;
+    -o-animation: fade-in-down ease-out 1s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-moz-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-o-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-in-up {
+    0% {transform: translateY(0px); opacity: 0}
+    1% {transform: translateY(50px);}
+    55% {opacity: 0}
+    100% {transform: translateY(0px); opacity: 1}
+}
+
+@keyframes fade-in-down {
+    0% {transform: translateY(0px); opacity: 0}
+    1% {transform: translateY(-50px);}
+    55% {opacity: 0}
+    100% {transform: translateY(0px); opacity: 1}
+}
+
+.home-greet{
+    font-size: 25px;
+}
+
+.home-name{
+    font-size: 70px;
+}
+
+.home-title{
+    font-size: 40px;
+}
 
 #about{
-    min-height: 200px;
-    height: 100vh;
+    min-height: 800px;
     background-color: darkcyan;
 }
 
 #projects{
-    min-height: 200px;
-    height: 100vh;
+    min-height: 800px;
     background-color: darkgoldenrod;
 }
 
 #contact{
-    min-height: 200px;
-    height: 100vh;
+    min-height: 800px;
     background-color: darkred;
 }
