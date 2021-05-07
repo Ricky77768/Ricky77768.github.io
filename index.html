@@ -24,7 +24,7 @@
 <!-- Navbar -->
 <nav id="main-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand" href="#">
-        <img src="img/icon.jpg" width="35" height="35" alt="RL">
+        <img src="img/icon.png" width="35" height="35" alt="RL">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,35 +79,40 @@
 
 <!-- About -->
 <div id="about" class="container-fluid d-flex min-vh-100">
-    <p>ABOUT - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus ea eum officiis tempora.
-        Aut consequuntur dolorem doloremque ducimus, earum enim excepturi hic, incidunt maxime minima nostrum officia
-        sequi, suscipit.</p>
+    <p>ABOUT - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lectus magna, pretium eu mattis ut, ultrices
+        quis mi. Donec sed arcu arcu. Pellentesque accumsan nibh in dui efficitur accumsan ac et augue. Nam feugiat
+        purus quis risus posuere gravida. Proin quis eros ex. Praesent eu venenatis ipsum. Suspendisse potenti. Cras
+        consectetur magna mi, sed consectetur quam facilisis at. Aliquam luctus neque lacus, eget ornare nunc ultricies
+        quis. Aliquam volutpat molestie cursus. Sed convallis erat libero. Nunc ac luctus lectus. Aenean malesuada
+        euismod auctor. Phasellus odio felis, eleifend ac consectetur quis, eleifend vitae mauris.</p>
 </div>
 
 <!-- Projects -->
 <div id="projects" class="container-fluid min-vh-100">
-    <p>PROJECTS - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus ea eum officiis tempora.
-        Aut consequuntur dolorem doloremque ducimus, earum enim excepturi hic, incidunt maxime minima nostrum officia
-        sequi, suscipit.</p>
+    <p>PROJECTS - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lectus magna, pretium eu mattis ut, ultrices
+        quis mi. Donec sed arcu arcu. Pellentesque accumsan nibh in dui efficitur accumsan ac et augue. Nam feugiat
+        purus quis risus posuere gravida. Proin quis eros ex. Praesent eu venenatis ipsum. Suspendisse potenti. Cras
+        consectetur magna mi, sed consectetur quam facilisis at. Aliquam luctus neque lacus, eget ornare nunc ultricies
+        quis. Aliquam volutpat molestie cursus. Sed convallis erat libero. Nunc ac luctus lectus. Aenean malesuada
+        euismod auctor. Phasellus odio felis, eleifend ac consectetur quis, eleifend vitae mauris.</p>
 </div>
 
 <!-- Contact -->
 <div id="contact" class="container-fluid min-vh-100">
-    <p>CONTACT - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ducimus ea eum officiis tempora.
-        Aut consequuntur dolorem doloremque ducimus, earum enim excepturi hic, incidunt maxime minima nostrum officia
-        sequi, suscipit.</p>
+    <p>CONTACT - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lectus magna, pretium eu mattis ut, ultrices
+        quis mi. Donec sed arcu arcu. Pellentesque accumsan nibh in dui efficitur accumsan ac et augue. Nam feugiat
+        purus quis risus posuere gravida. Proin quis eros ex. Praesent eu venenatis ipsum. Suspendisse potenti. Cras
+        consectetur magna mi, sed consectetur quam facilisis at. Aliquam luctus neque lacus, eget ornare nunc ultricies
+        quis. Aliquam volutpat molestie cursus. Sed convallis erat libero. Nunc ac luctus lectus. Aenean malesuada
+        euismod auctor. Phasellus odio felis, eleifend ac consectetur quis, eleifend vitae mauris.</p>
 </div>
-
 </body>
 
 <script>
     // Prevent URL change & Smooth scroll
-    $('a').on('click', function(e) {
+    $('a[href^="#"]').click(function(e) {
         e.preventDefault();
-        var hash = this.hash;
-        if ($(hash).length) {
-            $('html, body').animate({ scrollTop: $(hash).offset().top }, 0);
-        }
+        $('html,body').animate( {scrollTop: $(this.hash).offset().top}, 0);
     });
 </script>
 
