@@ -64,6 +64,7 @@ body{
 }
 
 .home-name{
+    margin: -40px;
     font-size: 70px;
 }
 
@@ -86,14 +87,6 @@ body{
 
 .home-moreinfo-text {
     padding-top: 10px;
-}
-
-.reduce-margin-30 {
-    margin: -30px;
-}
-
-.reduce-margin-40 {
-    margin: -40px;
 }
 
 .fade-in-text {
@@ -212,14 +205,27 @@ body{
     100% {transform: translateY(0px);}
 }
 
+/* Style - About */
+
 #about{
     background-color: darkcyan;
 }
+
+.about-question{
+    font-size: 50px;
+}
+
+.about-paragraph{
+    font-size: 30px;
+}
+
+/* Style - Projects */
 
 #projects{
     background-color: darkgoldenrod;
 }
 
+/* Style - Contact */
 #contact{
     background-color: darkred;
 }
