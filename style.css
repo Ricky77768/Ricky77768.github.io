@@ -208,7 +208,7 @@ body{
 /* Style - About */
 
 #about{
-    background-color: darkcyan;
+    background-color: #1b1e21;
 }
 
 .about-question{
@@ -216,16 +216,63 @@ body{
 }
 
 .about-paragraph{
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.about-skills{
+    font-size: 20px;
+}
+
+.semicircle-skillbar {
+    --percentage: 0;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.semicircle-skillbar::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border:10px solid;
+    border-color: dimgrey dimgray white white;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
+    animation: fillAnimation 1.2s ease-in-out;
+    -webkit-animation: fillAnimation 1.2s ease-in-out;
+    -moz-animation: fillAnimation 1.2s ease-in-out;
+    -o-animation: fillAnimation 1.2s ease-in-out;
+}
+
+@keyframes fillAnimation{
+    from {transform : rotate(-45deg);}
+}
+@-moz-keyframes fillAnimation{
+    from {transform : rotate(-45deg);}
+}
+@-webkit-keyframes fillAnimation{
+    from {transform : rotate(-45deg);}
+}
+@-o-keyframes fillAnimation{
+    from {transform : rotate(-45deg);}
 }
 
 /* Style - Projects */
 
 #projects{
-    background-color: darkgoldenrod;
+    background-color: #34ce57;
 }
 
 /* Style - Contact */
 #contact{
-    background-color: darkred;
+
 }
