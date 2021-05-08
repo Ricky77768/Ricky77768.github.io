@@ -207,9 +207,7 @@ body{
 /* Style - About */
 
 #about{
-    background-size:cover;
-    background-position: center;
-    background-image: url("img/about-bg.png");
+
 }
 
 .about-question{
@@ -225,11 +223,6 @@ body{
 
 .test{
     border: 3px solid red;
-}
-
-.margin-fix {
-    margin-left: 0;
-    margin-right: 0;
 }
 
 .semicircle-skillbar {
@@ -264,16 +257,16 @@ body{
 }
 
 @keyframes fillAnimation{
-    from {transform : rotate(-45deg);}
+    from {transform: rotate(-45deg);}
 }
 @-moz-keyframes fillAnimation{
-    from {transform : rotate(-45deg);}
+    from {transform: rotate(-45deg);}
 }
 @-webkit-keyframes fillAnimation{
-    from {transform : rotate(-45deg);}
+    from {transform: rotate(-45deg);}
 }
 @-o-keyframes fillAnimation{
-    from {transform : rotate(-45deg);}
+    from {transform: rotate(-45deg);}
 }
 
 /* Style - Projects */
@@ -283,5 +276,7 @@ body{
 
 /* Style - Contact */
 #contact{
-
+    background-size: cover;
+    background-position: center center;
+    background-image: url("img/contact-bg.png");
 }
