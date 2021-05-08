@@ -208,7 +208,9 @@ body{
 /* Style - About */
 
 #about{
-    background-color: #1b1e21;
+    background-size:cover;
+    background-position: center;
+    background-image: url("img/about-bg.png");
 }
 
 .about-question{
@@ -220,10 +222,19 @@ body{
 }
 
 .about-skills{
-    font-size: 20px;
+}
+
+.test{
+    border: 3px solid red;
+}
+
+.margin-fix {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .semicircle-skillbar {
+    margin: auto;
     --percentage: 0;
     position: relative;
     width: 80px;
@@ -241,7 +252,7 @@ body{
     position: absolute;
     width: 80px;
     height: 80px;
-    border:10px solid;
+    border: 10px solid;
     border-color: dimgrey dimgray white white;
     border-radius: 50%;
     left: 0;
@@ -269,7 +280,6 @@ body{
 /* Style - Projects */
 
 #projects{
-    background-color: #34ce57;
 }
 
 /* Style - Contact */
