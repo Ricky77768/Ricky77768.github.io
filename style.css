@@ -337,6 +337,13 @@ body{
 /* Style - Projects */
 
 #projects{
+    background-color: #0b2e13;
+}
+
+.card {
+    background-color: grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Style - Contact */
