@@ -266,8 +266,11 @@ body{
     font-size: 40px;
 }
 
+.social-icons{
+    margin: 20px 8px;
+}
+
 .home-moreinfo a {
-    margin-top: 5%;
     font-size: 20px;
     color: white;
     text-decoration: none;
@@ -275,7 +278,7 @@ body{
 
 .home-moreinfo a:hover {
     font-size: 20px;
-    color: skyblue;
+    color: deepskyblue;
     text-decoration: none;
 }
 
@@ -349,7 +352,7 @@ body{
 }
 
 .card:hover {
-    background-color: darkcyan;
+    background-color: deepskyblue;
 }
 
 /* Style - Contact */
@@ -377,7 +380,7 @@ body{
 }
 
 .social-link:hover {
-    color: #138496;
+    color: deepskyblue;
 }
 
 .contact-container{
