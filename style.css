@@ -233,6 +233,13 @@ body{
     color: white;
 }
 
+.no-js-msg{
+    margin-top: 10px;
+    font-size: 25px;
+    color: darkorange;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 body.modal-open {
     overflow: auto;
 }
