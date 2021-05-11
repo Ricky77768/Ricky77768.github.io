@@ -163,19 +163,6 @@
     100% {transform: translateY(0px);}
 }
 
-@keyframes fillAnimation{
-    from {transform: rotate(-45deg);}
-}
-@-moz-keyframes fillAnimation{
-    from {transform: rotate(-45deg);}
-}
-@-webkit-keyframes fillAnimation{
-    from {transform: rotate(-45deg);}
-}
-@-o-keyframes fillAnimation{
-    from {transform: rotate(-45deg);}
-}
-
 .fade-in-text {
     animation: fade-in linear 0.8s;
     -webkit-animation: fade-in linear 0.8s;
@@ -218,7 +205,6 @@
     -o-animation: float ease-in-out 3s infinite;
 }
 
-
 /* Style - Overall */
 html,body {
     width: 100%;
@@ -249,6 +235,22 @@ body.modal-open[style] {
 
 .modal::-webkit-scrollbar {
     width: 0 !important;
+}
+
+.hidden-fade{
+    opacity: 0;
+}
+.hidden-fade-up{
+    opacity: 0;
+}
+.hidden-fade-down{
+    opacity: 0;
+}
+.hidden-fade-left{
+    opacity: 0;
+}
+.hidden-fade-right{
+    opacity: 0;
 }
 
 /* Style - Nav Bar */
@@ -349,10 +351,6 @@ body.modal-open[style] {
     left: 0;
     top: 0;
     transform: rotate(calc(1deg * (-45 + var(--percentage) * 1.8)));
-    animation: fillAnimation 2.1s ease-in-out;
-    -webkit-animation: fillAnimation 2.1s ease-in-out;
-    -moz-animation: fillAnimation 2.1s ease-in-out;
-    -o-animation: fillAnimation 2.1s ease-in-out;
 }
 
 /* Style - Projects */

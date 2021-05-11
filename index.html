@@ -103,7 +103,7 @@
 <div id="about" class="container-fluid min-vh-100 d-flex align-items-center">
     <div class="col-12">
         <div class="row">
-            <div class="about-paragraph fade-in-right-text offset-md-1 col-md-6 offset-1 col-10">
+            <div class="about-paragraph hidden hidden-fade-right offset-md-1 col-md-6 offset-1 col-10">
                 <h1>Insert tagline here</h1>
                 <hr style="background-color: white">
                 <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
@@ -114,7 +114,7 @@
                 </p>
             </div>
 
-            <div class="about-skills fade-in-left-text offset-md-0 col-md-2 offset-1 col-5">
+            <div class="about-skills hidden hidden-fade-left offset-md-0 col-md-2 offset-1 col-5">
                 <h1 class="text-center">Skills</h1>
                 <hr style="background-color: white">
                 <div class="semicircle-skillbar" style="--percentage : 80;">Java</div>
@@ -130,7 +130,7 @@
                 <div class="semicircle-skillbar" style="--percentage : 30;">MQL4</div>
             </div>
 
-            <div class="about-tools fade-in-left-text offset-md-0 col-md-2 col-5">
+            <div class="about-tools hidden hidden-fade-left offset-md-0 col-md-2 col-5">
                 <h1 class="text-center">Tools</h1>
                 <hr style="background-color: white">
                 <p class="text-center">Sample Text</p>
@@ -145,7 +145,7 @@
 
 <!-- Projects -->
 <div id="projects" class="container-fluid min-vh-100">
-    <div class="row justify-content-center fade-in-down-text">
+    <div class="row justify-content-center hidden hidden-fade-down">
         <h1 class="col-12 projects-title text-center">My Projects</h1>
 
         <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
@@ -191,9 +191,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row justify-content-center fade-in-down-text">
         <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
                 <img class="card-img-top" src="img/contact-bg.png" width="278" height="200" alt="Card image">
@@ -225,11 +223,11 @@
         <div class="row">
             <div class="contact-container">
                 <div class="d-flex justify-content-center">
-                    <div class="contact-rocket fade-in-up-text">
+                    <div class="contact-rocket hidden hidden-fade-up">
                         <img src="img/contact-rocket.png" width="30" height="404" alt="">
                     </div>
 
-                    <div class="contact-info fade-in-left-text">
+                    <div class="contact-info hidden hidden-fade-right">
                         <h1 class="contact-text">(Click on names/emails!)</h1>
                         <h1>Contact Me!</h1>
                         <div class="row">
@@ -429,6 +427,58 @@
         e.preventDefault();
         $('html,body').animate( {scrollTop: $(this.hash).offset().top}, 600);
     });
+</script>
+
+<script>
+    // Animate elements when scrolled into view
+    (function() {
+        var elements;
+        var windowHeight;
+
+        function init() {
+            elements = document.querySelectorAll('.hidden');
+            windowHeight = window.innerHeight;
+        }
+
+        function checkPosition() {
+            for (var i = 0; i < elements.length; i++) {
+                var element = elements[i];
+                var positionFromTop = elements[i].getBoundingClientRect().top;
+
+                if (positionFromTop - windowHeight <= -100) {
+                    if (element.classList.contains("hidden-fade")) {
+                        element.classList.add('fade-in');
+                        element.classList.remove('hidden-fade');
+                    }
+                    if (element.classList.contains("hidden-fade-up")) {
+                        element.classList.add('fade-in-up-text');
+                        element.classList.remove('hidden-fade-up');
+                    }
+                    if (element.classList.contains("hidden-fade-down")) {
+                        element.classList.add('fade-in-down-text');
+                        element.classList.remove('hidden-fade-down');
+                    }
+                    if (element.classList.contains("hidden-fade-left")) {
+                        element.classList.add('fade-in-left-text');
+                        element.classList.remove('hidden-fade-left');
+                    }
+                    if (element.classList.contains("hidden-fade-right")) {
+                        element.classList.add('fade-in-right-text');
+                        element.classList.remove('hidden-fade-right');
+                    }
+                    if (element.classList.contains("hidden-fill")) {
+                        element.classList.add('skillbar-fill');
+                        element.classList.remove('hidden-fill');
+                    }
+                    element.classList.remove('hidden');
+                }
+            }
+        }
+        window.addEventListener('scroll', checkPosition);
+        window.addEventListener('resize', init);
+        init();
+        checkPosition();
+    })();
 </script>
 
 </html>
