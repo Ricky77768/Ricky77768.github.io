@@ -134,30 +134,22 @@
             </div>
         </div>
 
-        <div class="home-moreinfo fade-in-down-text">
-            <a role="button" class="row align-items-center justify-content-center float-text" href="#projects">
-                <i class="fas fa-arrow-down fa-0.4x"></i>
-                <div class="home-moreinfo-text">
-                    <p>&nbsp;My projects&nbsp;</p>
-                </div>
-                <i class="fas fa-arrow-down fa-0.4x"></i>
-            </a>
-        </div>
     </div>
 
 </div>
 
 <!-- Projects -->
 <div id="projects" class="container-fluid min-vh-100">
-
     <div class="row justify-content-center fade-in-down-text">
+        <h1 class="col-12 projects-title text-center">My Projects</h1>
+
         <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
                 <img class="card-img-top" src="img/contact-bg.png" width="278" height="200" alt="Card image">
                 <div class="card-body">
                     <h5 class="card-title">Card 1</h5>
                     <p class="card-text">Language(s): XXX, XXX<br>Tool(s): XXX, XXX</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-1">Learn More</button>
                 </div>
             </div>
         </div>
@@ -168,7 +160,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card 2</h5>
                     <p class="card-text">Language(s): XXX, XXX<br>Tool(s): XXX, XXX</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-2">Learn More</button>
                 </div>
             </div>
         </div>
@@ -179,7 +171,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card 3</h5>
                     <p class="card-text">Language(s): XXX, XXX<br>Tool(s): XXX, XXX</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-3">Learn More</button>
                 </div>
             </div>
         </div>
@@ -190,7 +182,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card 4</h5>
                     <p class="card-text">Language(s): XXX, XXX<br>Tool(s): XXX, XXX</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-4">Learn More</button>
                 </div>
             </div>
         </div>
@@ -203,7 +195,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card 5</h5>
                     <p class="card-text">Language(s): XXX, XXX<br>Tool(s): XXX, XXX</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-5">Learn More</button>
                 </div>
             </div>
         </div>
@@ -214,7 +206,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card 6</h5>
                     <p class="card-text">Language(s): XXX, XXX<br>Tool(s): XXX, XXX</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-6">Learn More</button>
                 </div>
             </div>
         </div>
@@ -286,7 +278,7 @@
     </div>
 </div>
 
-<!-- Footer -->
+<!-- Footer & Modals -->
 <div id="footer" class="container-fluid">
     <h6>Ricky Lu, May 2021</h6>
     <h6>Made with <a href="https://getbootstrap.com">Bootstrap</a>, <a class="footer-link" href="https://fontawesome.com">Font Awesome</a></h6>
@@ -296,6 +288,132 @@
         | <a href="https://wallpapercave.com/w/wp6803466">Bird</a>
         | <a href="https://wallpapercave.com/w/wp2894435">Circuit</a>
         | <a href="https://wallpaperaccess.com/minimalist-stars">Rocket</a></h6>
+
+    <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus deserunt dolorem,
+                        eaque esse ex, exercitationem facere hic inventore ipsa molestias mollitia nesciunt nihil odio
+                        sed sequi, ut velit veritatis?</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Github Repo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus deserunt dolorem,
+                        eaque esse ex, exercitationem facere hic inventore ipsa molestias mollitia nesciunt nihil odio
+                        sed sequi, ut velit veritatis?</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Github Repo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus deserunt dolorem,
+                        eaque esse ex, exercitationem facere hic inventore ipsa molestias mollitia nesciunt nihil odio
+                        sed sequi, ut velit veritatis?</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Github Repo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 4</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus deserunt dolorem,
+                        eaque esse ex, exercitationem facere hic inventore ipsa molestias mollitia nesciunt nihil odio
+                        sed sequi, ut velit veritatis?</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Github Repo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 5</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus deserunt dolorem,
+                        eaque esse ex, exercitationem facere hic inventore ipsa molestias mollitia nesciunt nihil odio
+                        sed sequi, ut velit veritatis?</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Github Repo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project 6</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias delectus deserunt dolorem,
+                        eaque esse ex, exercitationem facere hic inventore ipsa molestias mollitia nesciunt nihil odio
+                        sed sequi, ut velit veritatis?</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Github Repo</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>

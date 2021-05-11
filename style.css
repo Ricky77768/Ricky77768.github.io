@@ -233,6 +233,17 @@ body{
     color: white;
 }
 
+body.modal-open {
+    overflow: auto;
+}
+body.modal-open[style] {
+    padding-right: 0 !important;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0 !important;
+}
+
 /* Style - Nav Bar */
 .navbar{
     background: rgba(0, 0, 0, 0.5)
@@ -341,19 +352,33 @@ body{
 
 #projects{
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-image: url("img/projects-bg.png");
+}
+
+.projects-title{
+    margin-top: 50px;
 }
 
 .card {
     background-color: grey;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .card:hover {
     background-color: deepskyblue;
 }
+
+.modal-title {
+    color: black;
+}
+
+.modal-content {
+    color: black;
+    text-align: left;
+}
+
 
 /* Style - Contact */
 #contact{
