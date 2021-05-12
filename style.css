@@ -272,6 +272,10 @@ body.modal-open[style] {
     background-image: url("img/home-bg.jpg");
 }
 
+.white-border{
+    border: white 5px solid;
+}
+
 .home-greet{
     font-size: 25px;
 }
@@ -367,7 +371,7 @@ body.modal-open[style] {
 }
 
 .card {
-    background-color: rgba(100, 100, 100, 0.75);
+    background-color: rgba(110, 110, 110, 0.85);
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -388,7 +392,6 @@ body.modal-open[style] {
     color: black;
     text-align: left;
 }
-
 
 /* Style - Contact */
 #contact{
