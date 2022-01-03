@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/65aedcf7d6.js" crossorigin="anonymous"></script>
 
     <title>Ricky Lu</title>
+    <meta name="image" property="og:image" content="img/project-website.png">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 <!-- Navbar -->
-<nav id="main-navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
+<nav id="main-navbar" class="navbar navbar-expand-sm navbar-dark fixed-top">
     <a class="navbar-brand" href="#">
         <img src="img/icon.png" width="35" height="35" alt="RL">
     </a>
@@ -34,16 +35,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#home"> Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about"> About </a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects"> Projects </a>
+                <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact"> Contact </a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="files/Resume.pdf"> <b>My Resume</b> </a>
@@ -67,20 +68,26 @@
                 <p>Ricky Lu</p>
             </div>
             <div class="home-title fade-in-down-text text-center">
-                <p>an Avid Programmer/Developer</p>
+                <p>Avid Programmer/Developer</p>
             </div>
         </div>
 
         <div class="col-12 col-sm-5 fade-in-text text-center">
-            <img src="img/profile.jpg" width="200" height="200" class="rounded-circle white-border" alt="Profile Picture">
+            <img src="img/profile.jpg" width="210" height="210" class="rounded-circle white-border" alt="Profile Picture">
         </div>
+
 
         <div class="col-12">
             <div class="text-center fade-in-down-text">
                 <a class="social-link" href="mailto:ruikailu@gmail.com"><i class="social-icons fas fa-envelope fa-2x"></i></a>
                 <a class="social-link" href="https://github.com/Ricky77768"><i class="social-icons fab fa-github fa-2x"></i></a>
                 <a class="social-link" href="https://www.linkedin.com/in/ricky77768/"><i class="social-icons fab fa-linkedin-in fa-2x"></i></a>
-                <a class="social-link" href="files/Resume.pdf"><i class="social-icons fas fa-file-alt fa-2x"></i></a>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="text-center fade-in-down-text">
+                <a class="btn btn-outline-light resume-link" href="files/Resume.pdf">My Resume</a>
             </div>
         </div>
 
@@ -105,42 +112,43 @@
             <div class="about-paragraph hidden hidden-fade-right offset-md-1 col-md-6 offset-1 col-10">
                 <h1>About Me</h1>
                 <hr style="background-color: white">
-                <p>It is nice to have you here! I'm Ricky Lu, a student at the University of Waterloo studying Computer Science.
+                <p>Welcome to my website! It's nice to have you here! I'm Ricky Lu, currently studying Computer Science at the University of Waterloo.
                     <br>
                     <br>
-                    I have always been fascinated by how just lines of code can create various wonderful products.
-                    So in 2017, I dove into the world of programming with Java. Since then, I have been exploring many
-                    other computer-related fields. So far, I am very interested in anything related to game, web, or application development.
+                    I have always been fascinated by how lines of code can create various wonderful products.
+                    So in 2017, I began my programming journey with Java. Since then, I have been exploring many
+                    other fields such as game development, web development, and application development.
                     <br>
                     <br>
-                    Aside from programming, I like to read and play video games (maybe a bit too much). From time to time,
-                    I am working on my Android weather application and a small Unity game (very early in the development stage!).
+                    Aside from programming, I like to read and play video games. Periodically,
+                    I am working on my Android applications and a ball-rolling Unity game similar to Hamsterball, one of the first video games I ever played.
                 </p>
             </div>
 
             <div class="about-skills hidden hidden-fade-left offset-md-0 col-md-2 offset-1 col-5">
                 <h1 class="text-center">Skills</h1>
                 <hr style="background-color: white">
-                <div class="semicircle-skillbar" style="--percentage : 80;">Java</div>
-                <br>
-                <div class="semicircle-skillbar" style="--percentage : 60;">C#</div>
-                <br>
-                <div class="semicircle-skillbar" style="--percentage : 50;">HTML</div>
-                <br>
-                <div class="semicircle-skillbar" style="--percentage : 50;">CSS</div>
-                <br>
-                <div class="semicircle-skillbar" style="--percentage : 40;">C</div>
-                <br>
-                <div class="semicircle-skillbar" style="--percentage : 40;">MQL4</div>
+                <div class="text-center tierA-skills">Java</div>
+                <div class="text-center tierB-skills">C</div>
+                <div class="text-center tierB-skills">C++</div>
+                <div class="text-center tierB-skills">C#</div>
+                <div class="text-center tierB-skills">JavaScript</div>
+                <div class="text-center tierB-skills">TypeScript</div>
+                <div class="text-center tierB-skills">HTML/CSS</div>
+                <div class="text-center tierB-skills">MQL4</div>
             </div>
 
             <div class="about-tools hidden hidden-fade-left offset-md-0 col-md-2 col-5">
                 <h1 class="text-center">Tools</h1>
                 <hr style="background-color: white">
-                <p class="text-center">Android Studio</p>
-                <p class="text-center">Unity Engine</p>
-                <p class="text-center">MetaTrader 4</p>
-                <p class="text-center">Bootstrap</p>
+                <div class="text-center tierA-skills">Android Studio</div>
+                <div class="text-center tierA-skills">Unity Engine</div>
+                <div class="text-center tierA-skills">Cypress</div>
+                <div class="text-center tierB-skills">Bootstrap</div>
+                <div class="text-center tierB-skills">MetaTrader 4</div>
+                <div class="text-center tierC-skills">Jenkins</div>
+                <div class="text-center tierC-skills">Appium</div>
+
             </div>
         </div>
     </div>
@@ -151,68 +159,79 @@
     <div class="row justify-content-center hidden hidden-fade-down">
         <h1 class="col-12 projects-title text-center">My Projects</h1>
 
-        <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
-                <img class="card-img-top" src="img/project-map.jpg" width="278" height="200" alt="Card image">
+                <img class="card-img-top card-img" src="img/project-map.jpg" width="280" height="200" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title">Android App <br>(Map/POI Finder)</h5>
-                    <p class="card-text">Language: Java<br>Tool: Android Studio</p>
-                    <a href="https://github.com/Ricky77768/mapApplication" target="_blank" class="btn btn-primary">Github Repo</a>
+                    <h5 class="card-title">Android App <br>Map/POI Finder</h5>
+                    <p class="card-text">Java<br>Android Studio</p>
+                    <a href="https://github.com/Ricky77768/mapApplication" target="_blank" class="btn btn-outline-light">Github Repo</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
-                <img class="card-img-top" src="img/project-weather.jpg" width="278" height="200" alt="Card image">
+                <img class="card-img-top card-img" src="img/project-weather.jpg" width="280" height="200" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title">Android App <br>(Weather Forecast)</h5>
-                    <p class="card-text">Language: Java<br>Tool: Android Studio</p>
-                    <a href="https://github.com/Ricky77768/weatherApp" target="_blank" class="btn btn-primary" >Github Repo</a>
+                    <h5 class="card-title">Android App <br>Weather Forecast</h5>
+                    <p class="card-text">Java<br>Android Studio</p>
+                    <a href="https://github.com/Ricky77768/weatherApp" target="_blank" class="btn btn-outline-light">Github Repo</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
-                <img class="card-img-top" src="img/project-game.png" width="278" height="200" alt="Card image">
+                <img class="card-img-top card-img" src="img/project-3dgame.png" width="280" height="200" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title">Unity Game <br> 3D Parkour/FPS Game</h5>
-                    <p class="card-text">Language: C#<br>Tool: Unity Engine</p>
-                    <a href="https://github.com/Ricky77768/3D-Unity-Platformer" target="_blank" class="btn btn-primary">Github Repo</a>
+                    <h5 class="card-title">Unity<br>3D Parkour/FPS Game</h5>
+                    <p class="card-text">C#<br>Unity Engine</p>
+                    <a href="https://github.com/Ricky77768/3D-Unity-Platformer" target="_blank" class="btn btn-outline-light">Github Repo</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
-                <img class="card-img-top" src="img/project-games.png" width="278" height="200" alt="Card image">
+                <img class="card-img-top card-img" src="img/project-ballgame.png" width="280" height="200" alt="Card image">
                 <div class="card-body">
-                    <h5 class="card-title">Computer Science Games</h5>
-                    <p class="card-text">Language: Java<br>Tool: Greenfoot (Java IDE)</p>
-                    <a href="https://github.com/Ricky77768/ComputerScienceGames" target="_blank" class="btn btn-primary">Github Repo</a>
+                    <h5 class="card-title">Unity<br>Hamsterball Like Game</h5>
+                    <p class="card-text">C#<br>Unity Engine</p>
+                    <a href="https://github.com/Ricky77768/Hamsterball-Like-Game" target="_blank" class="btn btn-outline-light">Github Repo</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
-                <img class="card-img-top" src="img/project-website.png" width="278" height="200" alt="Card image">
+                <img class="card-img-top card-img" src="img/project-csgames.png" width="280" height="200" alt="Card image">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Science <br> Games</h5>
+                    <p class="card-text">Java<br>Greenfoot (Java IDE)</p>
+                    <a href="https://github.com/Ricky77768/ComputerScienceGames" target="_blank" class="btn btn-outline-light">Github Repo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
+            <div class="card" style="width: 280px;">
+                <img class="card-img-top card-img" src="img/project-website.png" width="280" height="200" alt="Card image">
                 <div class="card-body">
                     <h5 class="card-title">Portfolio Website<br>(This website!)</h5>
-                    <p class="card-text">Languages: HTML, CSS, JavaScript<br>Tool: Bootstrap</p>
-                    <a href="https://github.com/Ricky77768/Ricky77768.github.io" target="_blank" class="btn btn-primary">Github Repo</a>
+                    <p class="card-text">HTML/CSS, JavaScript<br>Bootstrap</p>
+                    <a href="https://github.com/Ricky77768/Ricky77768.github.io" target="_blank" class="btn btn-outline-light">Github Repo</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center">
             <div class="card" style="width: 280px;">
-                <img class="card-img-top" src="img/project-metatrader.png" width="278" height="200" alt="Card image">
+                <img class="card-img-top card-img" src="img/project-metatrader.png" width="280" height="200" alt="Card image">
                 <div class="card-body">
                     <h5 class="card-title">Customized <br> MetaTrader Project</h5>
-                    <p class="card-text">Language: MQL4<br>Tool: MetaTrader 4</p>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project-1">Learn More</button>
+                    <p class="card-text">MQL4<br>MetaTrader 4</p>
+                    <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#project-1">Learn More</button>
                 </div>
             </div>
         </div>
@@ -230,7 +249,7 @@
                     </div>
 
                     <div class="contact-info hidden hidden-fade-right">
-                        <h1 class="contact-text">(Click on names/emails!)</h1>
+                        <h1 class="contact-text">(Click on items for quick access!)</h1>
                         <h1>Contact Me!</h1>
                         <div class="row">
                             <div class="col-2">
@@ -291,7 +310,7 @@
     <h6>Backgrounds <br>
         <a href="https://pixy.org/6314393/">Leaf</a>
         | <a href="https://wallpapercave.com/w/wp6803466">Bird</a>
-        | <a href="https://wallpapercave.com/w/wp2894435">Circuit</a>
+        | <a href="https://www.wallpaperflare.com/blue-dazzling-lines-dark-background-4k-hd-technology-data-wireless-technology-wallpaper-mxjce">Grid</a>
         | <a href="https://wallpaperaccess.com/minimalist-stars">Rocket</a></h6>
 
     <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -305,9 +324,8 @@
                 </div>
                 <div class="modal-body">
                     <h6>This is a customized MetaTrader project for a client trading forex. I designed and maintained
-                        trading algorithms based on the client's request using strategies such as moving average, trailing loss,
+                        trading algorithms based on the client's request using strategies such as moving average, moving average crossovers, trailing loss,
                         and target profit.</h6>
-                    <br>
                     (Since this is for a client, there is no source code available)
                 </div>
             </div>
